@@ -51,3 +51,5 @@ class Checks01Listener(coolListener):
 
     def enterSubexpresion(self, ctx: coolParser.SubexpresionContext):
         ctx.type = ctx.expr()
+        
+        
