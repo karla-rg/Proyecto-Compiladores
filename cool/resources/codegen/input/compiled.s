@@ -9,20 +9,20 @@
 	.globl	_int_tag 
 	.globl	_bool_tag 
 	.globl	_string_tag 
-_int_tag:
+int_tag:
 	.word	2 
-_bool_tag:
+bool_tag:
 	.word	3 
-_string_tag:
+string_tag:
 	.word	4 
-	.globl	_MemMgr_INITIALIZER 
-_MemMgr_INITIALIZER:
-	.word	_NoGC_Init 
-	.globl	_MemMgr_COLLECTOR 
-_MemMgr_COLLECTOR:
-	.word	_NoGC_Collect 
-	.globl	_MemMgr_TEST 
-_MemMgr_TEST:
+	.globl	MemMgr_INITIALIZER 
+MemMgr_INITIALIZER:
+	.word	NoGC_Init 
+	.globl	MemMgr_COLLECTOR 
+MemMgr_COLLECTOR:
+	.word	NoGC_Collect 
+	.globl	MemMgr_TEST 
+MemMgr_TEST:
 	.word	0 
 	.word	-1
 str_const9:
