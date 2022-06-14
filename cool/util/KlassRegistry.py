@@ -24,3 +24,5 @@ def clearKlassTree():
 def getKlass(classname):
     # FIXME It shouldn't return none...
     return _allKlasses.get(classname, None)
+
+
