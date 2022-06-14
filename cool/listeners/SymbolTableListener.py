@@ -85,3 +85,6 @@ class SymbolTableListener(coolListener):
                 raise outofscope()
         else:
             ctx.type = getKlassByString(ctx.parentCtx.parentCtx.TYPE().getText())
+
+            
+            
